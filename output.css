@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-purple-100: #f8eeff;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-work: "Work Sans", sans-serif;
@@ -168,8 +169,14 @@
   .contents {
     display: contents;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
+  }
+  .bg-purple-100 {
+    background-color: var(--color-purple-100);
   }
   .font-work {
     font-family: var(--font-work);
