@@ -14,9 +14,14 @@
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
+    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-work: "Work Sans", sans-serif;
@@ -183,6 +188,9 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
   .contents {
     display: contents;
   }
@@ -209,6 +217,9 @@
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
+  }
+  .max-w-150 {
+    max-width: calc(var(--spacing) * 150);
   }
   .shrink-0 {
     flex-shrink: 0;
@@ -237,8 +248,17 @@
   .bg-\[url\(\.\/assets\/images\/background-pattern-mobile\.svg\)\] {
     background-image: url(./assets/images/background-pattern-mobile.svg);
   }
+  .bg-\[length\:100\%_18rem\] {
+    background-size: 100% 18rem;
+  }
   .bg-contain {
     background-size: contain;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-size-\[100\%_auto\] {
+    background-size: 100% auto;
   }
   .bg-size-\[auto_0\.5\] {
     background-size: auto 0.5;
@@ -252,8 +272,20 @@
   .bg-size-\[auto_100px\] {
     background-size: auto 100px;
   }
+  .bg-size-\[contain_50px\] {
+    background-size: contain 50px;
+  }
+  .bg-size-\[cover_50px\] {
+    background-size: cover 50px;
+  }
   .bg-center {
     background-position: center;
+  }
+  .bg-position-\[center_top\] {
+    background-position: center top;
+  }
+  .bg-position-\[center_top_1rem\] {
+    background-position: center top 1rem;
   }
   .bg-top {
     background-position: top;
@@ -302,6 +334,53 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .min-\[23\.4375\]\:bg-contain {
+    @media (width >= 23.4375) {
+      background-size: contain;
+    }
+  }
+  .min-\[23\.4375rem\]\:bg-contain {
+    @media (width >= 23.4375rem) {
+      background-size: contain;
+    }
+  }
+  .md\:w-10 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:rounded-2xl {
+    @media (width >= 48rem) {
+      border-radius: var(--radius-2xl);
+    }
+  }
+  .md\:bg-\[url\(\.\/assets\/images\/background-pattern-desktop\.svg\)\] {
+    @media (width >= 48rem) {
+      background-image: url(./assets/images/background-pattern-desktop.svg);
+    }
+  }
+  .md\:p-10 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:text-base {
+    @media (width >= 48rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .md\:text-lg {
+    @media (width >= 48rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .md\:text-\[3\.5rem\] {
+    @media (width >= 48rem) {
+      font-size: 3.5rem;
+    }
   }
 }
 @property --tw-leading {

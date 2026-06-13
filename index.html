@@ -16,16 +16,20 @@
     <title>Frontend Mentor | FAQ accordion</title>
   </head>
   <body
-    class="font-work bg-purple-100 flex justify-center items-center min-h-screen p-6 bg-[url(./assets/images/background-pattern-mobile.svg)] bg-no-repeat bg-contain"
+    class="font-work bg-purple-100 flex justify-center items-center min-h-screen p-6"
   >
-    <section class="bg-white p-6 rounded-lg">
-      <header class="flex items-center gap-6 mb-6">
-        <img src="./assets/images/icon-star.svg" alt="Star icon" class="w-6" />
-        <h1 class="text-[2rem] font-bold">FAQs</h1>
+    <section class="bg-white p-6 md:p-10 rounded-lg max-w-150 md:rounded-2xl">
+      <header class="flex items-center gap-6 mb-6 mb-8">
+        <img
+          src="./assets/images/icon-star.svg"
+          alt="Star icon"
+          class="w-6 md:w-10"
+        />
+        <h1 class="text-[2rem] font-bold md:text-[3.5rem]">FAQs</h1>
       </header>
       <div>
         <header class="flex gap-6 justify-between">
-          <h2 class="font-semibold">
+          <h2 class="font-semibold md:text-lg">
             What is Frontend Mentor, and how will it help me?
           </h2>
           <button class="shrink-0">
@@ -41,7 +45,7 @@
             />
           </button>
         </header>
-        <p class="mt-6 text-sm text-purple-600 leading-[1.5]">
+        <p class="mt-6 text-sm md:text-base text-purple-600 leading-[1.5]">
           Frontend Mentor offers realistic coding challenges to help developers
           improve their frontend coding skills with projects in HTML, CSS, and
           JavaScript. It's suitable for all levels and ideal for portfolio
@@ -51,7 +55,7 @@
       <hr class="my-6 text-purple-100" />
       <div>
         <header class="flex gap-6 justify-between">
-          <h2 class="font-semibold">Is Frontend Mentor free?</h2>
+          <h2 class="font-semibold md:text-lg">Is Frontend Mentor free?</h2>
           <button class="shrink-0">
             <img
               src="./assets/images/icon-plus.svg"
@@ -65,7 +69,9 @@
             />
           </button>
         </header>
-        <p class="mt-6 text-sm text-purple-600 leading-[1.5] hidden">
+        <p
+          class="mt-6 text-sm md:text-base text-purple-600 leading-[1.5] hidden"
+        >
           Yes, Frontend Mentor offers both free and premium coding challenges,
           with the free option providing access to a range of projects suitable
           for all skill levels.
@@ -74,7 +80,7 @@
       <hr class="my-6 text-purple-100" />
       <div>
         <header class="flex gap-6 justify-between">
-          <h2 class="font-semibold">
+          <h2 class="font-semibold md:text-lg">
             Can I use Frontend Mentor projects in my portfolio?
           </h2>
           <button class="shrink-0">
@@ -90,7 +96,9 @@
             />
           </button>
         </header>
-        <p class="mt-6 text-sm text-purple-600 leading-[1.5] hidden">
+        <p
+          class="mt-6 text-sm md:text-base text-purple-600 leading-[1.5] hidden"
+        >
           Yes, you can use projects completed on Frontend Mentor in your
           portfolio. It's an excellent way to showcase your skills to potential
           employers!
@@ -99,7 +107,7 @@
       <hr class="my-6 text-purple-100" />
       <div>
         <header class="flex gap-6 justify-between">
-          <h2 class="font-semibold">
+          <h2 class="font-semibold md:text-lg">
             How can I get help if I'm stuck on a challenge?
           </h2>
           <button class="shrink-0">
@@ -115,7 +123,9 @@
             />
           </button>
         </header>
-        <p class="mt-6 text-sm text-purple-600 leading-[1.5] hidden">
+        <p
+          class="mt-6 text-sm md:text-base text-purple-600 leading-[1.5] hidden"
+        >
           The best place to get help is inside Frontend Mentor's Discord
           community. There's a help channel where you can ask questions and seek
           support from other community members.
