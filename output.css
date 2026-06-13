@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-violet-600: #ad28eb;
     --color-purple-100: #f8eeff;
     --color-purple-600: #8b6990;
     --color-white: #fff;
@@ -218,11 +219,26 @@
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
+  .w-full {
+    width: 100%;
+  }
   .max-w-150 {
     max-width: calc(var(--spacing) * 150);
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .items-center {
     align-items: center;
@@ -238,6 +254,10 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-purple-100 {
     background-color: var(--color-purple-100);
@@ -299,6 +319,9 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
+  .text-left {
+    text-align: left;
+  }
   .font-work {
     font-family: var(--font-work);
   }
@@ -331,9 +354,19 @@
   .text-purple-600 {
     color: var(--color-purple-600);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .hover\:text-violet-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-violet-600);
+      }
+    }
   }
   .min-\[23\.4375\]\:bg-contain {
     @media (width >= 23.4375) {
@@ -383,6 +416,11 @@
     }
   }
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -399,6 +437,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
