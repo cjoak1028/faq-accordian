@@ -13,6 +13,8 @@
     />
     <link href="./output.css" rel="stylesheet" />
 
+    <script src="script.js" defer></script>
+
     <title>Frontend Mentor | FAQ accordion</title>
   </head>
   <body
@@ -30,6 +32,7 @@
       <div>
         <button
           class="flex gap-6 justify-between cursor-pointer w-full text-left hover:text-violet-600"
+          onclick="toggleAnswer(this)"
         >
           <h2 class="font-semibold md:text-lg">
             What is Frontend Mentor, and how will it help me?
@@ -37,15 +40,17 @@
           <img
             src="./assets/images/icon-plus.svg"
             alt="Plus icon"
-            class="w-7"
+            class="plus-icon w-7"
           />
           <img
             src="./assets/images/icon-minus.svg"
-            alt="Plus icon"
-            class="hidden w-7"
+            alt="Minus icon"
+            class="minus-icon hidden w-7"
           />
         </button>
-        <p class="mt-6 text-sm md:text-base text-purple-600 leading-[1.5]">
+        <p
+          class="mt-6 text-sm md:text-base text-purple-600 leading-[1.5] hidden"
+        >
           Frontend Mentor offers realistic coding challenges to help developers
           improve their frontend coding skills with projects in HTML, CSS, and
           JavaScript. It's suitable for all levels and ideal for portfolio
@@ -56,17 +61,18 @@
       <div>
         <button
           class="flex gap-6 justify-between cursor-pointer w-full text-left hover:text-violet-600"
+          onclick="toggleAnswer(this)"
         >
           <h2 class="font-semibold md:text-lg">Is Frontend Mentor free?</h2>
           <img
             src="./assets/images/icon-plus.svg"
             alt="Plus icon"
-            class="w-7"
+            class="plus-icon w-7"
           />
           <img
             src="./assets/images/icon-minus.svg"
             alt="Minus icon"
-            class="hidden w-7"
+            class="minus-icon hidden w-7"
           />
         </button>
         <p
@@ -81,6 +87,7 @@
       <div>
         <button
           class="flex gap-6 justify-between cursor-pointer w-full text-left hover:text-violet-600"
+          onclick="toggleAnswer(this)"
         >
           <h2 class="font-semibold md:text-lg">
             Can I use Frontend Mentor projects in my portfolio?
@@ -88,12 +95,12 @@
           <img
             src="./assets/images/icon-plus.svg"
             alt="Plus icon"
-            class="w-7"
+            class="plus-icon w-7"
           />
           <img
             src="./assets/images/icon-minus.svg"
             alt="Plus icon"
-            class="hidden w-7"
+            class="minus-icon hidden w-7"
           />
         </button>
         <p
@@ -108,6 +115,7 @@
       <div>
         <button
           class="flex gap-6 justify-between cursor-pointer w-full text-left hover:text-violet-600"
+          onclick="toggleAnswer(this)"
         >
           <h2 class="font-semibold md:text-lg">
             How can I get help if I'm stuck on a challenge?
@@ -115,12 +123,12 @@
           <img
             src="./assets/images/icon-plus.svg"
             alt="Plus icon"
-            class="w-7"
+            class="plus-icon w-7"
           />
           <img
             src="./assets/images/icon-minus.svg"
             alt="Plus icon"
-            class="hidden w-7"
+            class="minus-icon hidden w-7"
           />
         </button>
         <p
