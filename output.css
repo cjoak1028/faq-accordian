@@ -177,8 +177,26 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .static {
     position: static;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .-z-1 {
+    z-index: calc(1 * -1);
+  }
+  .z-1 {
+    z-index: 1;
+  }
+  .z-2 {
+    z-index: 2;
   }
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
@@ -206,6 +224,9 @@
   }
   .table {
     display: table;
+  }
+  .h-58 {
+    height: calc(var(--spacing) * 58);
   }
   .min-h-screen {
     min-height: 100vh;
@@ -376,6 +397,11 @@
   .min-\[23\.4375rem\]\:bg-contain {
     @media (width >= 23.4375rem) {
       background-size: contain;
+    }
+  }
+  .md\:h-80 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 80);
     }
   }
   .md\:w-10 {
